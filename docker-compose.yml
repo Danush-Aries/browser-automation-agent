@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  browser-agent:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      # Mount .env file if present
+      - ./.env:/app/.env:ro
+    restart: unless-stopped
+    # Playwright needs /dev/shm to be larger for Chromium
+    shm_size: "2gb"
