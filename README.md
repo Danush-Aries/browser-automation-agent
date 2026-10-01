@@ -2,8 +2,6 @@
 
 > **Give Claude a URL and a task; it navigates, clicks, types, scrolls, extracts data, and streams every screenshot back to a live Streamlit UI. Ships with server-side + client-side compaction so a 40-turn scrape stays under the context window.**
 
-<p align="center"><img src="assets/hero.gif" alt="Claude driving Playwright in a Streamlit UI" width="720"></p>
-
 <p align="center">
   <img src="https://img.shields.io/github/actions/workflow/status/Danush-Aries/browser-automation-agent/ci.yml?branch=main&style=flat-square" alt="build">
   <img src="https://img.shields.io/badge/license-MIT-00ff41?style=flat-square" alt="license">
@@ -47,12 +45,6 @@ Click a preset in the sidebar to try the agent immediately:
 - Hacker News top stories (front-page scrape)
 - GitHub trending repositories
 - httpbin.org contact form (form fill demo)
-
-## Screenshots
-
-| Streamlit UI + live browser | Action log | Docker headless mode |
-|---|---|---|
-| ![](assets/screenshot-1.png) | ![](assets/screenshot-2.png) | ![](assets/screenshot-3.png) |
 
 ## Features
 
